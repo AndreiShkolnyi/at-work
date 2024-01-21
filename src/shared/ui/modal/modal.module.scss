@@ -1,0 +1,53 @@
+.modal {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+    margin: auto;
+    width: 100%;
+    max-width: 310px;
+    z-index: 1000;
+    height: 210px;
+    border-radius: 16px;
+    background-color: var(--white);
+    &__img {
+        height: 84px;
+    }
+
+    @media screen and (max-width: 350px) {
+        justify-content: center;
+        margin: auto 52px;
+        padding: 32px;
+    
+    }
+
+    
+}
+
+.modal__container {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+    background-color: rgba($color: #000000, $alpha: 0.3);
+    display: flex;
+    opacity: 1;
+    transition: opacity 250ms ease;
+}
+
+.close_button {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    top: 24px;
+    right: 24px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    &_svg:hover {
+        fill: var(--accent);
+    }
+}

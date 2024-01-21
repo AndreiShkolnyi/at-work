@@ -1,0 +1,33 @@
+@use '../../../app/styles/mixins.scss';
+
+.dropdown-list {
+    position: absolute;
+    right: 0;
+    margin: 0;
+    padding: 10px 20px;
+    gap: 15px;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--white);
+    width: 200px;
+    border-radius: 12px;
+    box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+     @media screen and (max-width: 800px) {
+        width: 160px;
+    }
+}
+
+.list-item {
+    display: inline-block;
+    @include mixins.text-2('m');
+        @media screen and (max-width: 800px) {
+             @include mixins.text-2('m', 'm');
+        }
+    > a {
+        text-decoration: none;
+    }
+    :hover {
+        color: var(--accent);
+    }
+}

@@ -1,0 +1,68 @@
+@import './normalize.scss';
+@import './clear.scss';
+@import './variables.scss';
+@import './mixins.scss';
+
+:root {
+  font-family: 'Manrope', sans-serif;
+}
+
+body {
+  background-color: var(--dark-white);
+}
+
+.title {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.headline {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.text-1 {
+  font-size: 18px;
+  &.s {
+    font-weight: 700;
+  }
+  &.m {
+    font-weight: 500;
+  }
+}
+
+
+.text-2 {
+  font-size: 16px;
+  &.s {
+    font-weight: 700;
+  }
+  &.m {
+    font-weight: 500;
+  }
+}
+
+.caption {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.dropdown-icon {
+  cursor: pointer;
+  :hover {
+    fill: var(--accent);
+    z-index: 10;
+  }
+}
+
+.container {
+  max-width: 1160px;
+  margin: 0 auto;
+}
+
+.grayScale {
+    filter: grayscale(1);
+    -webkit-filter: grayscale(1);
+}
+
+

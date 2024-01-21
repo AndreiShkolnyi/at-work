@@ -1,0 +1,8 @@
+.navbar__list {
+    list-style-type: none;
+    gap: 4px;
+    display: flex;
+    @media screen and (max-width: 800px) {
+        display: none;
+    }
+}

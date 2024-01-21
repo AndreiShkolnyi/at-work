@@ -1,0 +1,53 @@
+@use '../../../app/styles/mixins.scss';
+
+.textField {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    @include mixins.text-1('s');
+        @media screen and (max-width: 800px) {
+             @include mixins.text-1('s', 'm');
+        }
+        @media screen and (max-width: 460px) {
+             
+        }
+}
+
+.field-label {
+    @include mixins.text-1('s');
+        @media screen and (max-width: 800px) {
+             @include mixins.text-1('s', 'm');
+        }
+}
+
+.field-input {
+    outline: none;
+    border: 1px solid var(--light-gray);
+    border-radius: 50px;
+    height: 42px;
+    width: 340px;
+    padding-left: 16px;
+    color: var(--black);
+    @include mixins.text-2('m');
+    @media screen and (max-width: 800px) {
+        @include mixins.text-2('m', 'm');
+    }
+    @media screen and (max-width: 470px) {
+        max-width: 287px;
+    }
+}
+
+.text-danger {
+    color: red;
+    @include mixins.caption();
+        @media screen and (max-width: 800px) {
+             @include mixins.caption('m')
+        }
+}
+
+.input-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+    

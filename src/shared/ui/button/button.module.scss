@@ -1,0 +1,20 @@
+.btn {
+    padding: 12px 46px;
+    cursor: pointer;
+    width: 170px;
+    background-color: var(--black);
+    color: var(--white);
+    text-transform: capitalize;
+    border: none;
+    border-radius: 50px;
+    &:hover {
+        background-color: var(--white);
+        color: var(--dark-gray);
+    }
+}
+
+.form-btn {
+   @media screen and (max-width: 700px) {
+        align-self: center;
+    }
+}

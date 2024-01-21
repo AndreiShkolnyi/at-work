@@ -1,0 +1,27 @@
+@use '../../../app/styles/mixins.scss';
+
+.category {
+    border: none;
+    color: var(--gray);
+    border-bottom: 1px solid var(--light-gray);
+    padding-bottom: 12px;
+    outline: none;
+    cursor: pointer;
+    @include mixins.text-2('m');
+        @media screen and (max-width: 800px) {
+             @include mixins.text-2('m', 'm');
+        }
+    &:hover {
+        color: var(--accent);
+        font-weight: 500;
+    }
+    &:active {
+        @include mixins.text-2('s');
+        color: var(--black);
+    }
+}
+
+.active {
+        @include mixins.text-2('s');
+        color: var(--black);
+    }

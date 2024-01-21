@@ -1,0 +1,51 @@
+@use '../../styles/mixins.scss';
+
+.header {
+    background-color: var(--white);
+    &__container {
+
+    }
+    &__body {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 16px 10px;
+
+    }
+    &_right {
+        height: 24px;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+    &__logo {
+
+    }
+    &__navbar {
+
+    }
+    &__user_info {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+
+    }
+    &__user_logo {
+        width: 20px;
+        height: 20px;
+        border: none;
+        > img {
+            border-radius: 50%;
+        }
+        @media screen and (max-width: 800px) {
+             width: 28px;
+             height: 28px;
+        }
+    }
+    &__user_name {
+        @include mixins.text-2('m');
+        @media screen and (max-width: 800px) {
+             display: none;
+        }
+    }
+}

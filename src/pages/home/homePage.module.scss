@@ -1,0 +1,6 @@
+@use '../../app/styles/mixins.scss';
+
+.home__container {
+    margin-bottom: 198px;
+     @include mixins.media-m();
+}
