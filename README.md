@@ -1,8 +1,27 @@
-# React + Vite
+# AT-WORK
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+проект "AT-WORK"
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Описание
+
+С помощью данного приложения вы сможете просматривать карточки пользователей, вносить их в архив, убирать из архива и удалять.
+Также есть возможность редактирования информации о пользователях.
+
+## Установка
+
+1. Клонируйте репозиторий: `git clone https://github.com/volodin32104/at-work.git` 
+2. Перейдите в каталог проекта: `cd at-work`
+3. Установите зависимости: `npm install` или `yarn install`
+
+## Используемые технологии:
+
+1. React
+2. Redux Toolkit
+3. HTML5
+4. SCSS
+5. Git
+6. FSD
+7. Vite
+8. React Router 6
+9. Axios
